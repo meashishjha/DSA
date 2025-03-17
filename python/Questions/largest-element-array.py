@@ -1,8 +1,34 @@
 '''
-Solution of two sum problem in python
+Given an array, we have to find the largest element in the array.
+Example 1:
+
+Input:
+ arr[] = {2,5,1,3,0};
+Output:
+ 5
+Explanation:
+ 5 is the largest element in the array.
+
+Example2:
+
+Input:
+ arr[] = {8,10,5,7,9};
+Output:
+ 10
+Explanation:
+ 10 is the largest element in the array.
 '''
 
+def find_largest_element(arr):
+    largest_element = 0
+    for element in arr:
+        if element > largest_element:
+            largest_element = element
 
+    return largest_element
+
+input_array = [2,5,1,3,0]
+print(find_largest_element(input_array))
 
 #**************************************************************************
 #* (C) Copyright by Ashish Jha (ash2kcs@gmail.com) and                    *
