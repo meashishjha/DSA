@@ -1,4 +1,3 @@
-#############################################################################
 # (C) Copyright 2026 by Ashish Jha and Outshine Labs.                       #
 # All Rights Reserved.  https://wwww.ashishjha.com/                         #
 # Copyright.  https://wwww.outshinelabs.com/                                #
@@ -12,19 +11,13 @@
 # The authors and publisher shall not be liable in any event for incidental #
 # or consequential damages in connection with, or arising out of, the       #
 # furnishing, performance, or use of these programs.                        #
-########################=======*********=======##############################
 
-#Solving patterns Questions
+# print n times
 
-num = 1
+def print_n_times(n):
+    if n <= 0:
+        return
+    print("This is first time")
+    print_n_times(n-1)
 
-
-def recursive_print():
-    global num
-    
-    print(f"Printing {num}")
-    num += 1
-    recursive_print()
-
-
-recursive_print()
+print_n_times(3)
